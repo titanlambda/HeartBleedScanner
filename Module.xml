@@ -1,0 +1,12 @@
+
+<module>
+  <name>HearbleedScanner</name>
+  <version>0.1</version>
+  <display_name>HearbleedScanner</display_name>
+  <author>Tamaghna Basu</author>
+  <project_home>https://github.com/titanlambda/HeartBleedScanner</project_home>
+  <works_on_session>no</works_on_session>
+  <works_on_url>no</works_on_url>
+  <works_on_finding>no</works_on_finding>
+  <description>This module scans URLs for heartbleed vulnerability. Use the menu options shown in this module to navigate and scan URLS.</description>
+</module>
